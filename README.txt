@@ -1,1 +1,1 @@
-Java, Spring Framework, React, HTML, CSS.
+Java, Spring Framework, React, HTML, CSS.;
