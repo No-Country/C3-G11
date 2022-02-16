@@ -5,6 +5,7 @@
  */
 package ecommerce.g11.noCountry.entidades;
 
+import ecommerce.g11.noCountry.enums.ProductCategory;
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,4 +22,15 @@ public class Product implements Serializable{
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
+    private String name;
+    private Double price;
+    private String description;
+    private ProductCategory category;      
+    private Integer stock;
+    //ADD: images and delay
+
+    public Product() {
+    }
+    
+    
 }
