@@ -11,6 +11,11 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 /**
@@ -18,6 +23,10 @@ import org.hibernate.annotations.GenericGenerator;
  * @author usuario
  */
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Pay implements Serializable{
     @Id
     @GeneratedValue(generator = "uuid")
@@ -30,9 +39,10 @@ public class Pay implements Serializable{
     private String owner;
     private PaymentMethod paymentMethod;
     private Integer discount;
-    private Cart cart;
+    @OneToOne
+    private Cart cart; 
+    @OneToOne
     private Shipping shipping;
-    private Double amount;
-    //Relation
+    private Double amount;    
     
 }

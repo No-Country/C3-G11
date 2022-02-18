@@ -11,7 +11,8 @@ package ecommerce.g11.noCountry.enums;
  */
 public enum ProductCategory {
     EMPANADAS("Empanadas"), TARTAS("Tartas"), PIZZAS("Pizzas y Pizzanesas"),
-    PAPAS("Papas"), VINAGRETAS("Vinagretas"), VARIOS("Varios");
+    PAPAS("Papas"), VINAGRETAS("Vinagretas"), VARIOS("Varios"), 
+    BEBIDAS("Bebidas"), POSTRES("Postres");
 
     private String value;
 
