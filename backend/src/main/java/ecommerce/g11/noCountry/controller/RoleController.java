@@ -1,5 +1,6 @@
 package ecommerce.g11.noCountry.controller;
 
+import ecommerce.g11.noCountry.dto.RoleDTO;
 import ecommerce.g11.noCountry.entidades.Role;
 import ecommerce.g11.noCountry.servicios.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/santero/roles")
 public class RoleController {
 
@@ -15,10 +17,10 @@ public class RoleController {
     private RoleService roleService;
 
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody Role role){
+    public ResponseEntity<?> save(@RequestBody RoleDTO roleDTO){
 
         try {
-            return ResponseEntity.status(HttpStatus.CREATED).body(roleService.save(role));
+            return ResponseEntity.status(HttpStatus.CREATED).body(roleService.save(roleDTO));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error al intentar guardar");
         }

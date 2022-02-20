@@ -22,7 +22,7 @@ public class Role {
 
     private String name;
 
-    @ManyToMany(mappedBy = "roles", cascade = CascadeType.ALL)
-    private List<User> users;
+    //@ManyToMany(mappedBy = "roles", cascade = CascadeType.ALL)
+    //private List<User> users;
 
 }

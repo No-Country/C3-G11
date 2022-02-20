@@ -1,5 +1,6 @@
 package ecommerce.g11.noCountry.controller;
 
+import ecommerce.g11.noCountry.dto.UserDTO;
 import ecommerce.g11.noCountry.entidades.User;
 import ecommerce.g11.noCountry.servicios.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/santero/users")
 public class UserController {
 
