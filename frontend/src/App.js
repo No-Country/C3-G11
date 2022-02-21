@@ -1,9 +1,9 @@
-import NavAppBar from "./components/Appbar";
+import AppBar from "./components/AppBar/AppBar.jsx";
 
 function App() {
   return (
     <div className="App">
-      <NavAppBar />
+      <AppBar />
     </div>
   );
 }
