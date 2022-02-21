@@ -10,18 +10,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 const useStyles = makeStyles( (theme) => ({
     root: {
         flexGrow: 1,
+        textAlign: "center",
     },
     menuButton: {
-        marginRight: theme.spacing(1)
+        marginRight: theme.spacing(2)
     },
     title: {
         flexGrow: 1,
-        textAlign: "center",
     },
 }));
 
 export default function NavAppBar() {
-    const classes = useStyles();
+    const classes = useStyles;
 
     return (
         <div className={classes.root}>
