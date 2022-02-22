@@ -1,17 +1,52 @@
 .siteFooter {
 	background-color: #000000;
-	padding: 45px 0 20px;
-	font-size: 15px;
+	padding: 45px 0 45px;
+	font-size: 1.5rem;
 	line-height: 24px;
 	color: #fff;
     display: flex;
-    Justify-content: space-between;
-}
-
-.container {
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container .icons .icon {
+.siteFooter > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
     padding: 10px;
 }
+
+.siteFooter > img {
+    height: 7rem;
+    padding: 10px;
+}
+
+.siteFooter > i {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/*
+.container {
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container > img {
+    height: 7rem;
+}
+
+.container > i {
+    font-size: 1.5rem;
+}
+*/
