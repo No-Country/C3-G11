@@ -1,9 +1,11 @@
-import NavAppBar from "./components/Appbar";
+import AppBar from "./components/AppBar/AppBar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
     <div className="App">
-      <NavAppBar />
+      <AppBar />
+      <Footer />
     </div>
   );
 }
