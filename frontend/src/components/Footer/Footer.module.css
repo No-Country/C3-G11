@@ -1,0 +1,17 @@
+.siteFooter {
+	background-color: #000000;
+	padding: 45px 0 20px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+    display: flex;
+    Justify-content: space-between;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+
+.container .icons .icon {
+    padding: 10px;
+}
